@@ -512,6 +512,86 @@
 	"cwrc:hasPrecision": "cwrc:highCertainty"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?rs_annotation_20240821175921425",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-08-21T15:59:21.425Z",
+	"dcterms:modified": "2024-08-21T15:59:21.425Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/tessgeng",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Tessa Gengnagel"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?rs_annotation_20240821175921425#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.5.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?rs_annotation_20240821175921425#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[3]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "owl:Thing",
+		"@id": "http://www.wikidata.org/entity/Q909391",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.5.0"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><encodingDesc>
          <projectDesc>
             <p>This encoded file was created by Diane Jakacki and made available for a Linked
@@ -561,7 +641,7 @@
          </figure>
          <p>Twenty years ago I went to college and began to recognize the roof; having dressed for a
             date (dates were absolutely crucial then) in my low heels, my nylons, my garter belt, my
-            horsehair petticoat, my cotton petticoat, my taffeta skirt, my knit jersey blouse, my
+            horsehair petticoat, my cotton petticoat, my <rs key="taffeta" ref="http://www.wikidata.org/entity/Q909391" cert="high">taffeta</rs> skirt, my knit jersey blouse, my
             circle pin, my gold earrings, my charm bracelet, my waist-cincher, my lipstick, my
             little bit of eye shadow, my heavy faille coat, my nail polish, my mohair scarf, and my
             gloves, I went into the dormitory garden to wait. The garden was full of late spring
