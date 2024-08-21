@@ -352,6 +352,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?person_annotation_20240821175519372",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-08-21T15:55:19.372Z",
+	"dcterms:modified": "2024-08-21T15:55:19.372Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/tessgeng",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Tessa Gengnagel"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?person_annotation_20240821175519372#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.5.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/tessgeng/LCWorkshop_August2024/main/Russ_LWC/Joanna_Russ_exercise.xml?person_annotation_20240821175519372#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/sp[5]/ab/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://www.wikidata.org/entity/Q299190",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.5.0"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><encodingDesc>
          <projectDesc>
             <p>This encoded file was created by Diane Jakacki and made available for a Linked
@@ -468,7 +547,7 @@
             <speaker>The Fairy:</speaker>
             <ab>Shall I restore to you your lost heterosexuality so that you may once again on the
                Late Late Show have strange and brilliant adventures in foreign climes with handsome
-               actors such as Buster Crabbe, Dirk Bogarde, James Mason, and Christopher Lee?—leaving
+               actors such as Buster Crabbe, <persName key="Dirk Bogarde" ref="http://www.wikidata.org/entity/Q299190" role="act">Dirk Bogarde</persName>, James Mason, and Christopher Lee?—leaving
                it to you to determine what common characteristics (if any) unites this rather
                peculiar list because, my dear (to be perfectly frank), you have the damnedest tastes
                I ever saw.</ab>
